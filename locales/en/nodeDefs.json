@@ -1,0 +1,52 @@
+{
+ "MiniMaxH3TimelineDirectorCustom": {
+  "display_name": "MiniMaxH3 Director",
+  "description": "Compatibility node combining the material planner and plan encoder (copy, free to modify).",
+  "inputs": {
+   "clip_name": {
+    "name": "Text Encoder CLIP",
+    "tooltip": "MiniMax H3 text encoder loaded inside this node; no CLIPLoader needed."
+   },
+   "video_vae_name": {
+    "name": "Video VAE",
+    "tooltip": "Video VAE for reference encoding and latent decoding."
+   },
+   "audio_vae_name": {
+    "name": "Audio VAE",
+    "tooltip": "Audio VAE for reference soundtracks and the generated audio stream."
+   },
+   "prompt": {
+    "name": "Prompt"
+   },
+   "width": {
+    "name": "Width"
+   },
+   "height": {
+    "name": "Height"
+   },
+   "ref_image_size": {
+    "name": "Reference Image Size"
+   },
+   "timeline_data": {
+    "name": "Timeline Data"
+   }
+  },
+  "outputs": {
+   "0": {
+    "name": "Positive"
+   },
+   "1": {
+    "name": "Latent"
+   },
+   "2": {
+    "name": "Video VAE"
+   },
+   "3": {
+    "name": "Audio VAE"
+   },
+   "4": {
+    "name": "Segment index"
+   }
+  }
+ }
+}
