@@ -1,0 +1,52 @@
+{
+ "MiniMaxH3TimelineDirectorCustom": {
+  "display_name": "MiniMaxH3导演台",
+  "description": "将素材规划台与规划编码器合并的兼容节点（副本，可自由改动）。",
+  "inputs": {
+   "clip_name": {
+    "name": "文本编码器 CLIP",
+    "tooltip": "本节点内部加载的 H3 文本编码器，无需外接 CLIPLoader。"
+   },
+   "video_vae_name": {
+    "name": "视频 VAE",
+    "tooltip": "用于参考编码与 Latent 解码的视频 VAE。"
+   },
+   "audio_vae_name": {
+    "name": "音频 VAE",
+    "tooltip": "用于参考音轨与生成音频流的音频 VAE。"
+   },
+   "prompt": {
+    "name": "提示词"
+   },
+   "width": {
+    "name": "宽度"
+   },
+   "height": {
+    "name": "高度"
+   },
+   "ref_image_size": {
+    "name": "参考图尺寸"
+   },
+   "timeline_data": {
+    "name": "时间线数据"
+   }
+  },
+  "outputs": {
+   "0": {
+    "name": "正向条件"
+   },
+   "1": {
+    "name": "Latent"
+   },
+   "2": {
+    "name": "视频 VAE"
+   },
+   "3": {
+    "name": "音频 VAE"
+   },
+   "4": {
+    "name": "第几段"
+   }
+  }
+ }
+}
